@@ -4,4 +4,8 @@ def intro():
 	print("You get up and start to look around, you look at the clock closer, you're 15 minutes late to your magic training class!")
 	print("You start to frantically run around your room and look for your things. You can't find your potion bag, your wand, or the food to feed your snail.")
 	print("You grab your bag from the night stand.")
-	print("")
+	print("1 - check under your bed")
+	print("2 - check in the drawers of the nightstand")
+	while True:
+		bn = input()
+		in 
