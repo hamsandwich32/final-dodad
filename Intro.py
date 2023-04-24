@@ -8,4 +8,6 @@ def intro():
 	print("2 - check in the drawers of the nightstand")
 	while True:
 		bn = input()
-		in 
+		if bn == 1:
+			print("You look under the bed, you feel something pointy. You reach for it and pull it from under the bed. It's a unicorn horn. What does this do?")
+			 
