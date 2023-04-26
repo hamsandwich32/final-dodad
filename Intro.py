@@ -10,6 +10,6 @@ def intro_part():
 		bn = input()
 		if bn == 1:
 			print("You look under the bed, you feel something pointy. You reach for it and pull it from under the bed. It's a unicorn horn. What does this do?")
-		else == 2:
+		if bn == 2:
 			print("You open the top drawer of your nightstand you find a brown leather bag of salt. What could this possibly be used for?")
 
