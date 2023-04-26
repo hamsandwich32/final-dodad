@@ -1,1 +1,2 @@
-import Intro, intro
+import random
+from Intro import intro_part
