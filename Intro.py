@@ -1,9 +1,10 @@
 def intro_part():
 	print("You wake up to your alarm blaring, you realize that it's been going off for the last five minutes.")
 	print("You hit the alarm expecting it to turn off. It yells at you to get up.")
-	print("You get up and start to look around, you look at the clock closer, you're 15 minutes late to your magic training class!")
+	print("You get up and start to look around. You feel disoriented. You're in your bedroom, you look at the clock closer, you're 15 minutes late to your magic training class!")
 	print("You start to frantically run around your room and look for your things. You can't find your potion bag, your wand, or the food to feed your snail.")
-	print("You grab your bag from the night stand.")
+	print("You look around once more and see your bag on your nightstand, you grab it.")
+	print("You're still missing a lot of your stuff, where do you look?")
 	print("1 - check under your bed")
 	print("2 - check in the drawers of the nightstand")
 	while True:
