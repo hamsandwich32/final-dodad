@@ -11,14 +11,18 @@ def intro_part():
 		bn = input()
 		try:
 			if int(bn) == 1:
-				print("You look under the bed, you feel something pointy. You reach for it and pull it from under the bed. It's a unicorn horn. What does this do?")
-			elif int(bn) == 2:
-				print("You open the top drawer of your nightstand you find a brown leather bag of salt. What could this possibly be used for?")
+				print("You look under the bed, you feel something pointy. You reach for it and pull it from under the bed. It's a unicorn horn. Ugh, useless.\n")
+				print("Pick an option to chose from.")
+				break
+			if int(bn) == 2:
+				print("You open the top drawer of your nightstand you find a brown leather bag of salt. What could this possibly be used for?\n")
+				print("")
+				print("You look at the bag of salt, it has a picture of a snail on it. Huh.")
+				print("You look around your room you see:")
 				break 
 			else:
 				print("Pick an option to chose from.")
 		except:
 			print("Value must be a whole number between 1 and 2.")
 
-	print("You're still missing most of your things. You need to check elsewhere!")
 
