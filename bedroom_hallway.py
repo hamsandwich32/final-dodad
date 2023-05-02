@@ -7,9 +7,18 @@ def hallway1():
 	print("Doors start to appear around you, which one are you supposed to go down?\n")
 	print("1 - open the door next to you")
 	print("2 - keep walking down the hall until the end")
-	#while True:
-	#	attempt_1 = input()
-	#	try:
-	#		if int(attempt_1) == 1:
+	attempt_1 = input()
+	while attempt_1 == 1 or 2:
+		try:
+			
+			if int(attempt_1) == 1:
+				print("You reach for the door ahead of you, your arm goes through the door. It's not this one.")
+				print("Try again.")
+				break
+			if int(attempt_1) == 2:
+				print("The hallway keeps spinning around you, you finally reach the door and try to open it. It's locked.")
+		except:
+			print("Try again.")
+	
 
 
