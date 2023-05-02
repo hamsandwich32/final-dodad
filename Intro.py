@@ -24,6 +24,6 @@ def intro_part():
 			print("Value must be a whole number between 1 and 2.")
 	print("")
 	print("You realize that you need to feed your snail before you leave, you have to find him first. Maybe he's in the crystal room?")
-	print("You look around your room you see:")
+	print("You look around your room and head towards your door.")
 
 
