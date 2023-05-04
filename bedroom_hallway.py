@@ -73,7 +73,6 @@ def hallway1():
 					print("Goodbye.")
 					sys.exit()
 
-
 		else:
 			print("Try again.")
 	print("You need to head back to the locked door. Which direction do you go?\n")
