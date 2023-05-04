@@ -5,10 +5,10 @@ def potion_weirdness():
 	MENU = '''
 	1 - go forward
 	2 - go back'''
-	attempt_1 = 'a':
+	attempt_1 = 'a'
 	while attempt_1 == 1 or 2:
 		print(MENU)
-		attempt_1 = input("What's your choice?\n")
+		attempt_1 = input("\nWhat's your choice?\n")
 		if attempt_1 == '1':
 			print("You walk forward and the path diverges into . Where do you three paths where do you go from here?\n")
 			MENU = '''
@@ -17,41 +17,55 @@ def potion_weirdness():
 			3 - go straight'''
 			print(MENU)
 
-
+		attempt_1 = 'a'
+		while attempt_1 == 1 or 2 or 3:
+			attempt_1 = input("\nWhat's your choice?\n")
 			if attempt_1 == '1':
-				print("You're greeted with a profoundly large door. Why do you have this? You try the knob and it licks you.\
-				You need to find a sacrifice to feed it.\n")
+				print("You're greeted with a profoundly large door. Why do you have this? You try the knob and it licks you. You need to find a sacrifice to feed it.\n")
 				print(MENU)
-			if attempt_1 == '2':
+				
+			elif attempt_1 == '2':
 				MENU = '''
 				1 - go right
 				2 - go left'''
 				print("You walk to the end of the hallway and it diverges to the left and the right.\n")
 				print("You've been fooled once again by your own home. You really need to stop making things hard on yourself.\n")
 				print(MENU)
-
-
-				if attempt_1 == '1':
-					MENU = '''
-					1 - go left'''
+				
+				attempt_1 = 'a'
+				while attempt_1 == 1 or 2:
+					attempt_1 = input("\nWhat's your choice?\n")
+					if attempt_1 == '1':
+						
+						MENU = '''
+						1 - go left
+						2 - go back to potion room hallway'''
 					#add in as item save to inventory
-					print("You walk to the end of the hallway. You find a large bookcase. You start to look around and you find a small sacrifice for the doorknob.\n")
-					print(MENU)
-				if attempt_1 == '2':
-					MENU = '''
-					1 - go right'''
+						print("You walk to the end of the hallway. You find a large bookcase. You start to look around and you find a small sacrifice for the doorknob.\n")
+						print(MENU)
+						if attempt_1 == '2':
+							break
+
+					if attempt_1 == '2':
+						MENU = '''
+						1 - go right
+						2 - go back to potion room hallway'''
 					#add in as item save to inventory
-					print("You walk to the end of the hallway. You find the potion sitting on toadstool by the culdron, it smells weird. What is this again?\n")
-					potion = 'potion'
-					print(MENU)
-			if attempt_1 == '3':
-				print("You walk down the hallway. Pictures of the witches who have owned the house before you hang.\
-				Why can't you be like them? Why must you be late to all of your training classes\n")
+						print("You walk to the end of the hallway. You find the potion sitting on toadstool by the culdron, it smells weird. What is this again?\n")
+						class Potion:
+							def __init__(self, potion):
+								self.potion = "potion"
+						print(MENU)
+						while attempt_1 == '2':
+
+		
+			elif attempt_1 == '3':
+				print("You walk down the hallway. Pictures of the witches who have owned the house before you hang. Why can't you be like them? Why must you be late to all of your training classes\n")
 				print("You slowly walk past all of the portraits, you just want to make them proud.\n")
 				print("You reach the door end of the hallway, you reach out and twist the handle. It opens for you, you walk through and are greeted with your giant bee.")
 				break
 
 
-		if attempt_1 == '2':
-			print("You are back at the funky hallway from alice and wonderland. Don't go back.")
-			print(MENU)
+		#if attempt_1 == '2':
+			#print("You are back at the funky hallway from alice and wonderland. Don't go back.")
+			#print(MENU)

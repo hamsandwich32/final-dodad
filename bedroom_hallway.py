@@ -31,7 +31,7 @@ def hallway1():
 	print(MENU)
 	attempt_2 = 'a'
 	while attempt_2 == 1 or 2 or 3:
-		attempt_2 = input("What's your choice?\n")
+		attempt_2 = input("\nWhat's your choice?\n")
 		if attempt_2 == '1':
 			print("The hallway's a dead end.\n")
 			print("Try again.")
@@ -57,7 +57,7 @@ def hallway1():
 			print(MENU)
 			attempt_0 = 'a'
 			while attempt_0 != '1':
-				attempt_0 = input("What's your choice?\n")
+				attempt_0 = input("\nWhat's your choice?\n")
 				if attempt_0 == '2':
 					MENU = '''
 					1 - go to the hallway to the right
