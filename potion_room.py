@@ -36,7 +36,6 @@ def potion_weirdness():
 				while attempt_1 == 1 or 2:
 					attempt_1 = input("\nWhat's your choice?\n")
 					if attempt_1 == '1':
-						
 						MENU = '''
 						1 - go left
 						2 - go back to potion room hallway'''
@@ -56,8 +55,7 @@ def potion_weirdness():
 							def __init__(self, potion):
 								self.potion = "potion"
 						print(MENU)
-						while attempt_1 == '2':
-
+						
 		
 			elif attempt_1 == '3':
 				print("You walk down the hallway. Pictures of the witches who have owned the house before you hang. Why can't you be like them? Why must you be late to all of your training classes\n")
