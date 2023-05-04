@@ -1,4 +1,5 @@
 def hallway1():
+	import sys
 	print("You reach towards the door leading out of your bedroom, you grab the doorknob and twist it.")
 	print("You open the door and look out into the narrow hallway.")
 	print("The hallway is dimly lit from the floating candles that span the entire hallway.")
@@ -54,10 +55,23 @@ def hallway1():
 			2 - go back to hallway'''
 			print(MENU)
 			attempt_0 = 'a'
-			while attempt_0 == 1 or 2:
+			while attempt_0 != '1':
 				attempt_0 = input("What's your choice?\n")
+				if attempt_0 == '2':
+					MENU = '''
+					1 - go to the hallway to the right
+					2 - go to the hallway to the left
+					3 - stay in the distorting hallway
+					4 - sit and cry
+					5 - go back to bedroom'''
+					print("Good job sticking with it. You walk back to the bedroom door and open it. You walk down the hallway and are met with a door. It's locked.")
+					print("Try again.")
+					print(MENU)
+					break
 				if attempt_0 == '1':
-					
+					print("Goodbye.")
+					sys.exit()
+
 
 		else:
 			print("Try again.")
