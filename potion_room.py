@@ -35,13 +35,14 @@ def potion_weirdness():
 					MENU = '''
 					1 - go left'''
 					#add in as item save to inventory
-					print("You walk to the end of the hallway. You find a small sacrifice for the doorknob.\n")
+					print("You walk to the end of the hallway. You find a large bookcase. You start to look around and you find a small sacrifice for the doorknob.\n")
 					print(MENU)
 				if attempt_1 == '2':
 					MENU = '''
 					1 - go right'''
 					#add in as item save to inventory
-					print("You walk to the end of the hallway. You find the potion by the culdron, it smells weird. What is this again?\n")
+					print("You walk to the end of the hallway. You find the potion sitting on toadstool by the culdron, it smells weird. What is this again?\n")
+					potion = 'potion'
 					print(MENU)
 			if attempt_1 == '3':
 				print("You walk down the hallway. Pictures of the witches who have owned the house before you hang.\
