@@ -37,6 +37,7 @@ def hallway1():
 			print("Try again.")
 			print(MENU)
 		elif attempt_2 == '2':
+			#add in as item save to inventory
 			print("The hallway turns pitch black. You pull out your potion bag and use an enlightener potion to illuminate the hallway. At the end of the hallway sits a table. You walk over, the key is sitting ontop of the table.\n")
 			break
 		elif attempt_2 == '3':

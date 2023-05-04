@@ -15,6 +15,7 @@ def intro_part():
 			break
 		elif int(bn) == 2:
 			print("You check your table as well and find your broomstick. You realize that you can use it to grab what's underneath your bed.\n")
+			#add in as item save to inventory
 			print("You check back under your bed and use your broomstick to grab the thing under your bag. You pull it out and realize its the bag of snail food!")
 			break 
 		else:
