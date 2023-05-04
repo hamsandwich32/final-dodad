@@ -24,7 +24,9 @@ def hallway1():
 	MENU = '''
 	1 - go to the hallway to the right
 	2 - go to the hallway to the left
-	3 - stay in the distorting hallway'''
+	3 - stay in the distorting hallway
+	4 - sit and cry
+	5 - go back to bedroom'''
 	print(MENU)
 	attempt_2 = 'a'
 	while attempt_2 == 1 or 2 or 3:
@@ -34,18 +36,36 @@ def hallway1():
 			print("Try again.")
 			print(MENU)
 		elif attempt_2 == '2':
-			print("The hallway turns pitch black. You pull out your potion bag and use an enlightener potion to illuminate the hallway.\tAt the end of the hallway sits a table. You walk over, the key is sitting ontop of the table.\n")
+			print("The hallway turns pitch black. You pull out your potion bag and use an enlightener potion to illuminate the hallway. At the end of the hallway sits a table. You walk over, the key is sitting ontop of the table.\n")
 			break
 		elif attempt_2 == '3':
 			print("The hallway spins and makes you discombobulated. This probably isn't it.\n")
 			print("Try again.")
 			print(MENU)
+		elif attempt_2 == '4':
+			print("You're doing great. Just keep trying. You're already so late.")
+			print("Try again.")
+			print(MENU)
+		elif attempt_2 == '5':
+			print("You walk back to your room. You feel defeated and like you want to plop on your bed and just quit magic training.")
+			print("What do you do now?")
+			MENU = '''
+			1 - quit magic training
+			2 - go back to hallway'''
+			print(MENU)
+			attempt_0 = 'a'
+			while attempt_0 == 1 or 2:
+				attempt_0 = input("What's your choice?\n")
+				if attempt_0 == '1':
+					
+
 		else:
 			print("Try again.")
 	print("You need to head back to the locked door. Which direction do you go?\n")
 	MENU = '''
 	1 - go right
 	2 - go left'''
+	print(MENU)
 	attempt_3 = 'a'
 	while attempt_3 == 1 or 2:
 		attempt_3 = input("What's your choice?\n")
