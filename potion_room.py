@@ -34,18 +34,20 @@ def potion_weirdness():
 				if attempt_1 == '1':
 					MENU = '''
 					1 - go left'''
+					#add in as item save to inventory
 					print("You walk to the end of the hallway. You find a small sacrifice for the doorknob.\n")
 					print(MENU)
 				if attempt_1 == '2':
 					MENU = '''
 					1 - go right'''
+					#add in as item save to inventory
 					print("You walk to the end of the hallway. You find the potion by the culdron, it smells weird. What is this again?\n")
 					print(MENU)
 			if attempt_1 == '3':
 				print("You walk down the hallway. Pictures of the witches who have owned the house before you hang.\
 				Why can't you be like them? Why must you be late to all of your training classes\n")
 				print("You slowly walk past all of the portraits, you just want to make them proud.\n")
-				print("You reach the door end of the hallway, you reach out and twist the handle. It opens for you, you walk through and are greeted with your bee. ")
+				print("You reach the door end of the hallway, you reach out and twist the handle. It opens for you, you walk through and are greeted with your giant bee.")
 				break
 
 
