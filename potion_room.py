@@ -50,27 +50,21 @@ def potion_weirdness():
 					#add in as item save to inventory
 							print("You walk to the end of the hallway. You find a large bookcase. You start to look around and you find a small sacrifice for the doorknob.\n")
 							print(MENU)
-							attempt_3 = 'a'
-							while attempt_3 == 1 or 2:
-								attempt_3 = input("\nWhat's your choice?\n")
-								if attempt_3 == '1':
+							attempt_4 = 'a'
+							while attempt_4 == 1 or 2:
+								attempt_4 = input("\nWhat's your choice?\n")
+								if attempt_4 == '1':
 									MENU = '''
 									1 - go right
 									2 - go back to potion room hallway'''
 					#add in as item save to inventory
 									print("You walk to the end of the hallway. You find the potion sitting on toadstool by the culdron, it smells weird. What is this again?\n")
 									print(MENU)
-									if attempt_3 == '1':
+									if attempt_4 == '1':
 										MENU = '''
 										1 - go left
 										2 - go back to potion room hallway'''
 										break
-								if attempt_3 == '2':
-									MENU = '''
-			1 - go right
-			2 - go left
-			3 - go straight'''
-			print(MENU)
 					#add in as item save to inventory
 						#if attempt_2 == '2':
 							#break
