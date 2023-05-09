@@ -3,7 +3,7 @@ from Intro import intro_part
 intro_part()
 from bedroom_hallway import hallway1
 hallway1()
-from potion_room import potion_weirdness
+from potion_room_2 import potion_weirdness
 potion_weirdness()
 #import save_pkl
 from Bee_room import bee
