@@ -4,6 +4,8 @@ def intro_part():
 	print("You get up and start to look around. You feel disoriented. You're in your bedroom, you look at the clock closer, you're 15 minutes late to your magic training class!\n")
 	print("You start to frantically run around your room and look for your things. You can't find your potion bag, your wand, or the food to feed your snail.\n")
 	print("You look around once more and see your potion bag on your table, you grab it.\n")
+
+
 	print("You're still missing a lot of your stuff, where do you look?\n")
 	print("\t1 - check under your bed")
 	print("\t2 - check the top of the table")
