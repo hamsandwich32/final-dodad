@@ -1,20 +1,22 @@
 import pickle
-def save_object(bag, Intro):
-    with open(Intro, 'wb') as f:
-        pickle.dump(bag, f)
-        print(f"Object saved to {Intro}")
+SAVE_FILE = "saved_game.dat"
 
-def load_object(main):
-    with open(main, 'rb') as f:
-        bag = pickle.load(f)
-        print(f"Object loaded from {main}")
-        return obj
+# Function to save the game data
+def save_game(player_data):
+	with open(SAVE_FILE, "wb") as file:
+		pickle.dump(player_data, file)
+	print("Game saved successfully.")
 
-my_object = ['potion bag','snail food','broomstick','wand','potion','leash','key','crystal']
-filename = 'my_object.pickle'
-save_object(my_object, main)
-loaded_obj = load_object(main)
-print(loaded_obj)
+# Function to load the game data
+def load_game():
+	try:
+		with open(SAVE_FILE, "rb") as file:
+			player_data = pickle.load(file)
+		print("Game loaded successfully.")
+		return player_data
+	except FileNotFoundError:
+		print("Save file not found.")
+		return None
 
 
 
