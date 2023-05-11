@@ -1,10 +1,15 @@
-import random
+import add_remove
+add_remove.add_item('item')
+add_remove.remove_item('item')
 from Intro import intro_part
 intro_part()
 from bedroom_hallway import hallway1
 hallway1()
-from potion_room import potion_weirdness
+from potion_room_2 import potion_weirdness
 potion_weirdness()
-#import save_pkl
-items = ["potion bag","snail food","broomstick","wand","potion","sacrifice","key","crystal", "leash"]
-locations = ["bed","table","culdron","cabnet", "shelve","Pantry"] #work on locations instead of the end of the hallway make it specific mainly in potion room
+from Bee_room import bee
+bee()
+
+
+locations = ["bed","table","culdron","bookcase", "toadstool",""] 
+my_object = ["potion bag","snail food","broomstick","wand","potion","sacrifice","key","crystal", "leash"]
