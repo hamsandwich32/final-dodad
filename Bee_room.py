@@ -1,5 +1,5 @@
 import sys
-from add_remove import add_item, inventory
+from add_remove import add_item
 def bee():
 		#include classes within the program
 		#Include inventory
@@ -10,6 +10,7 @@ def bee():
 	MENU = '''
 	1 - try to get past your bee
 	2 - try to find the rest of your things '''
+	print(MENU)
 	attempt_1 = 'a'
 	while attempt_1 == 1 or 2:
 		attempt_1 = input("\nWhat's your choice?\n")
@@ -37,8 +38,3 @@ def bee():
 					print("You pick up the potion.\n")
 					add_item("potion")
 					print("You continue to look around the room and realize it goes back further. What do you want to do?\n")
-					
-					#attempt_3 = 'a':
-					#while attempt_3 == 1 or 2 or 3:
-
-	    
