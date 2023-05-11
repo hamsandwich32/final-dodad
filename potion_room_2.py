@@ -22,6 +22,7 @@ def potion_weirdness():
 	3 - go straight'''
 			print("You walk forward and the path diverges into. Where do you three paths where do you go from here?\n")
 			print(MENU)
+
 			sacrifice = False
 			attempt_2 = 'a'
 			while attempt_2 == 1 or 2 or 3 or sacrifice:
@@ -31,8 +32,8 @@ def potion_weirdness():
 					print("You slowly walk past all of the portraits, you just want to make them proud.\n")
 					print("You reach the door end of the hallway, you reach out and twist the handle. It opens for you, you walk through and are greeted with your giant bee.\n")
 					print(f"Items collected:{inventory}\n")
-					#break
-				elif attempt_2 == '1':
+					break
+				if attempt_2 == '1':
 					print("Find a sacrifice.")
 					print(MENU)
 				elif attempt_2 == '1' and sacrifice:
@@ -58,13 +59,13 @@ def potion_weirdness():
 							print(MENU)
 							sacrifice = True
 							add_item('sacrifice')
-							break
-						elif attempt_3 == '2':
+							
+						if attempt_3 == '2':
 							print("You walk forward and the path diverges into. Where do you three paths where do you go from here?\n")
 							MENU = '''
 	1 - go right
 	2 - go left
 	3 - go straight'''
 							print(MENU)
-							#break
+							break
 					
