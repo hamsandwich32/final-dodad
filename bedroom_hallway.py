@@ -1,4 +1,5 @@
-from add_remove import add_item, inventory
+from add_remove import add_item, inventory, remove_item
+from save_pkl import save_game
 def hallway1():
 	import sys
 	print("You reach towards the door leading out of your bedroom, you grab the doorknob and twist it.")
@@ -21,7 +22,7 @@ def hallway1():
 		if attempt_1 == '2':
 			print("The hallway keeps spinning around you, you finally reach the door and try to open it. It's locked.\n")
 			print("You walk around the hallway trying to find the key. You realize you probably shouldn't have a distorting hallway anymore.\n")
-			print("As you look around for the key in the middle of the hallway, you see that the hallway diverges to the right and the left.")
+			print("As you look around for the key in the middle of the hallway, you see that the hallway diverges to the right and the left.\n")
 			break
 	MENU = '''
 	1 - go to the hallway to the right
@@ -50,8 +51,8 @@ def hallway1():
 			print("Try again.")
 			print(MENU)
 		elif attempt_2 == '5':
-			print("You walk back to your room. You feel defeated and like you want to plop on your bed and just quit magic training.")
-			print("What do you do now?")
+			print("You walk back to your room. You feel defeated and like you want to plop on your bed and just quit magic training.\n")
+			print("What do you do now?\n")
 			MENU = '''
 			1 - quit magic training
 			2 - go back to hallway'''
@@ -87,6 +88,7 @@ def hallway1():
 		if attempt_3 == '1':
 			print("You made it back to the middle of the hallway, you start walking towards the door and unlock the door.\n")
 			print(f"Items collected:{inventory}\n")
+			remove_item("key")
 			break
 		elif attempt_3 == '2':
 			print("You made the wrong decision. Shame on you.\n")
@@ -94,5 +96,6 @@ def hallway1():
 			print(MENU)
 		else:
 			print("Try again.")
-
+player_data = {"level": 2, "inventory": ["bag", "snail food",]}
+save_game(player_data)
 

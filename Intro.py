@@ -1,4 +1,5 @@
 from add_remove import add_item, inventory, remove_item
+from save_pkl import save_game
 def intro_part():
 	print("You wake up to your alarm blaring, you realize that it's been going off for the last five minutes.\n")
 	print("You hit the alarm expecting it to turn off. It yells at you to get up.\n")
@@ -31,5 +32,6 @@ def intro_part():
 	print("You realize that you need to feed your snail before you leave, you have to find him first. Maybe he's in the crystal room?\n")
 	print("You look around your room and head towards your door.\n")
 	print(f"Items collected:{inventory}\n")
-
+	player_data = {"level": 1, "inventory": ["snail food", "bag",]}
+	save_game(player_data)
 
