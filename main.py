@@ -9,7 +9,9 @@ from potion_room_2 import potion_weirdness
 potion_weirdness()
 from Bee_room import bee
 bee()
-
+import save_pkl
+save_pkl.save_game('player_data')
+save_pkl.load_game()
 
 locations = ["bed","table","culdron","bookcase", "toadstool",""] 
 my_object = ["potion bag","snail food","broomstick","wand","potion","sacrifice","key","crystal", "leash"]
